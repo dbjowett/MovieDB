@@ -1,0 +1,13 @@
+.mainContainer {
+  padding-bottom: 50px;
+  padding-top: 100px;
+  margin-left: 250px;
+}
+
+@media (max-width: 1000px) {
+  .mainContainer {
+    padding-bottom: 50px;
+    padding-top: 100px;
+    margin-left: 0px;
+  }
+}

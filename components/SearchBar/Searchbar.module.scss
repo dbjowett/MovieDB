@@ -1,0 +1,23 @@
+.form_container {
+  height: 100px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+
+.searchBar {
+  border: none;
+  padding: 10px;
+  border-radius: 15px;
+  width: 50vw;
+  height: 45px;
+  max-width: 300px;
+}
+
+.button {
+  border: none;
+  border-radius: 15px;
+  padding: 10px 20px;
+  margin-left: 10px;
+  cursor: pointer;
+}

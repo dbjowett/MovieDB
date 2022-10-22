@@ -1,0 +1,111 @@
+.auth {
+  margin: 4rem auto;
+  width: 95vw;
+  max-width: 470px;
+  text-align: center;
+  color: black;
+  background-color: rgb(255, 255, 255);
+  border-radius: 20px;
+  padding: 2rem;
+}
+
+.headerContainer {
+  margin-top: 15px;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+}
+
+.headerContainer h1 {
+  font-size: 2rem;
+}
+
+.form {
+  padding: 25px;
+  align-items: center;
+}
+
+.inputContainer {
+  margin-bottom: 1rem;
+}
+
+.inputContainer input {
+  border-radius: 5px;
+  width: 90%;
+  padding: 10px;
+  background-color: #c0d1e1;
+  border: none;
+}
+
+.buttonContainer {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  width: 100%;
+}
+
+/* All buttons */
+.buttonContainer button {
+  cursor: pointer;
+  border-radius: 5px;
+}
+
+.loginButton {
+  width: 90%;
+  background-color: #fd4747;
+  border: none;
+  color: white;
+  font-size: 1.3rem;
+  padding: 8px;
+}
+
+/* Outline btns */
+.optionsBtnContainer {
+  text-align: center;
+  margin-top: 18px;
+  width: 90%;
+  display: flex;
+  justify-content: space-between;
+}
+
+.optionsBtnContainer button {
+  background-color: inherit;
+  font-size: 0.8rem;
+  padding: 10px 10px;
+  max-width: 50%;
+  border: 1px solid rgb(215, 215, 215);
+}
+
+.optionsBtnContainer button:last-of-type {
+  display: flex;
+  align-items: center;
+}
+
+.optionsBtnContainer button:last-of-type div {
+  margin-left: 5px;
+  min-width: 20px;
+  color: white;
+  padding: 7px;
+  background-color: #fd4747;
+  border-radius: 15px;
+}
+
+@media (max-width: 470px) {
+  .optionsBtnContainer {
+    margin-top: 18px;
+    flex-direction: column;
+  }
+  .optionsBtnContainer button {
+    font-size: 0.7rem;
+    max-width: 100%;
+  }
+  .optionsBtnContainer button:last-of-type {
+    margin-top: 7px;
+  }
+  .inputContainer input {
+    width: 100%;
+  }
+  .loginButton {
+    width: 100%;
+  }
+}
