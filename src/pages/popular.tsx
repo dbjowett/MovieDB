@@ -1,9 +1,13 @@
 import Head from 'next/head';
 import MovieGrid from '../components/MovieGrid';
+import { getMovies } from '../store/actions/moviesActions';
+import { useAppDispatch } from '../store/hooks';
 import { Movie } from '../types';
 import tmdb from '../utils/tmdb';
 
 export default function PopularPage({ movies }: { movies: Movie[] }) {
+  const dispatch = useAppDispatch();
+  dispatch(getMovies);
   return (
     <div>
       <Head>
