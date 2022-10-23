@@ -10,8 +10,6 @@
   },
   "dependencies": {
     "@reduxjs/toolkit": "^1.8.6",
-    "@types/nprogress": "^0.2.0",
-    "@types/react-redux": "^7.1.24",
     "axios": "^1.1.3",
     "next": "12.3.1",
     "next-auth": "^4.14.0",
@@ -25,10 +23,16 @@
   },
   "devDependencies": {
     "@types/node": "18.11.3",
+    "@types/nprogress": "^0.2.0",
     "@types/react": "18.0.21",
     "@types/react-dom": "18.0.6",
+    "@types/react-redux": "^7.1.24",
     "eslint": "8.25.0",
     "eslint-config-next": "12.3.1",
     "typescript": "4.8.4"
-  }
+  },
+  "main": "index.js",
+  "repository": "https://github.com/dbjowett/MovieDB.git",
+  "author": "Daniel Jowett <dbjowett@gmail.com>",
+  "license": "MIT"
 }

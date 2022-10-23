@@ -1,7 +1,7 @@
 import Head from 'next/head';
 import MovieGrid from '../components/MovieGrid';
-import { Movie } from '../types/types';
-import imdb from '../utils/tmdb';
+import { Movie } from '../types';
+import tmdb from '../utils/tmdb';
 
 export default function PopularPage({ movies }: { movies: Movie[] }) {
   return (
@@ -18,7 +18,8 @@ export default function PopularPage({ movies }: { movies: Movie[] }) {
 export async function getStaticProps() {
   const {
     data: { results },
-  } = await imdb(`discover/movie`);
+  } = (await tmdb(`discover/movie`)) as { data: { results: Movie[] } };
+
   return {
     props: {
       movies: results,

@@ -1,6 +1,6 @@
 import Head from 'next/head';
 import imdb from '../utils/tmdb';
-import { Movie } from '../types/types';
+import { Movie } from '../types';
 import MovieGrid from '../components/MovieGrid';
 
 export default function Trending({ movies }: { movies: Movie[] }) {

@@ -1,6 +1,6 @@
 import Head from 'next/head';
 import MovieGrid from '../components/MovieGrid';
-import { Movie } from '../types/types';
+import { Movie } from '../types';
 import imdb from '../utils/tmdb';
 
 export default function ComingSoon({ movies }: { movies: Movie[] }) {

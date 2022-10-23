@@ -3,7 +3,7 @@ import Link from 'next/link';
 import styles from './MovieCard.module.scss';
 
 import { FaStar } from 'react-icons/fa';
-import { Movie } from '../../types/types';
+import { Movie } from '../../types';
 
 export default function MovieCard({ movie }: { movie: Movie }) {
   const string = movie.original_title.split(' ').join('_');

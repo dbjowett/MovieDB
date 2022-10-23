@@ -1,7 +1,7 @@
 import Image from 'next/image';
 import classes from '../MovieDetail/Movie_Detail.module.scss';
 import { FaStar } from 'react-icons/fa';
-import { DetailedMovie, Movie } from '../../types/types';
+import { DetailedMovie, Movie } from '../../types';
 
 export default function MovieDetail({ movie }: { movie: DetailedMovie }) {
   if (!movie) {
